@@ -52,11 +52,82 @@
             </li>
           </ul>
         </address>
-        <button class="burger-btn" type="button">
+        <button class="burger-btn" type="button" data-menu-open>
           <svg class="burger-icon" width="24" height="24">
             <use href="./images/icons.svg#icon-heroicon-menu"></use>
           </svg>
         </button>
+      </div>
+
+      <!-- moobile menu -->
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu-close" type="button" data-menu-close>
+            <svg class="mobile-menu-icon-x" width="8" height="8">
+              <use href="./images/icons.svg#icon-x"></use>
+            </svg>
+          </button>
+          <nav class="nav-mobile-menu">
+            <ul class="nav-mobile-menu-list">
+              <li class="nav-mobile-menu-item">
+                <a href="./index.html" class="nav-mob-link">Studio</a>
+              </li>
+              <li class="nav-mobile-menu-item">
+                <a href="" class="nav-mob-link">Portfolio</a>
+              </li>
+              <li class="nav-mobile-menu-item">
+                <a href="" class="nav-mob-link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="contacts-mobile-menu">
+            <ul class="contacts-mobile-menu-list">
+              <li class="contacts-mobile-menu-item">
+                <a
+                  class="contacts-mobile-menu-link"
+                  href="mailto:info@devstudio.com"
+                >
+                  info@devstudio.com
+                </a>
+              </li>
+              <li class="contacts-mobile-menu-item">
+                <a class="contacts-mobile-menu-link" href="tel:+110001111111">
+                  +11 (000) 111-11-11
+                </a>
+              </li>
+            </ul>
+          </address>
+          <ul class="mobile-soc-list">
+            <li class="mobile-soc-item">
+              <a class="mobile-soc-link" href="#"
+                ><svg class="mobile-soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-soc-item">
+              <a class="mobile-soc-link" href="#">
+                <svg class="mobile-soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-soc-item">
+              <a class="mobile-soc-link" href="#"
+                ><svg class="mobile-soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-soc-item">
+              <a class="mobile-soc-link" href="#"
+                ><svg class="mobile-soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <!-- Maim -->
@@ -660,7 +731,8 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop hiden" data-modal>
+    <!-- modal -->
+    <div class="backdrop" data-modal>
       <div class="modal">
         <button class="modal-btn-x" type="button" data-modal-close>
           <svg class="modal-icon-x" width="8" height="8">
@@ -734,15 +806,20 @@
             <label class="form-label option" for="user-privacy">
               <span class="custom-checkbox"
                 ><svg class="checkbox-icon" width="10" height="8">
-                  <use href="./images/icons.svg#icon-chack"></use></svg></span
-              >I accept the terms and conditions of the
-              <a class="checkbox-link" href="#">Privacy Policy</a></label
-            >
+                  <use href="./images/icons.svg#icon-chack"></use>
+                </svg>
+              </span>
+              <span class="mob-label">
+                I accept the terms and conditions of the
+                <a class="checkbox-link" href="#">Privacy Policy</a></span
+              >
+            </label>
           </div>
           <button class="btn-modal" type="submit">Send</button>
         </form>
       </div>
     </div>
     <script src="./modal.js"></script>
+    <script src="./menu.js"></script>
   </body>
 </html>
