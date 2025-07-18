@@ -380,7 +380,7 @@ button {
     padding: 72px 0;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)),
-        url(../images/banerX1mob.jpg);
+        url(../images/banerx2mob.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -555,7 +555,7 @@ button {
     }
 
     .advantages-title {
-        text-align: center;
+        text-align: start;
         font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
@@ -574,7 +574,6 @@ button {
 .section-team {
     background-color: #f4f4fd;
     padding: 96px 0;
-    max-width: 320px;
     margin: 0 auto;
 }
 
@@ -668,9 +667,7 @@ button {
 
 @media screen and (min-width: 768px) {
 
-    .section-team {
-        max-width: 768px;
-    }
+
 
     .team-list {
         gap: 64px 24px;
@@ -682,7 +679,7 @@ button {
 
     .section-team {
         padding: 120px 0;
-        max-width: 1158px;
+
     }
 
     .team-list {
